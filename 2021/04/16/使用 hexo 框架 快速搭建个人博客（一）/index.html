@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> - Hexo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="Hello，各位小伙伴大家好，今天带大家来使用 hexo框架 来从零搭建个人博客！使用 hexo 框架 快速搭建个人博客（二）@TOC
+一、什么是 hexo 框架 ？
+
+hexo框架 是一个快速、简,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Hexo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>四月 16, 2021</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h1 id="Hello，各位小伙伴大家好，今天带大家来使用-hexo框架-来从零搭建个人博客！"><a href="#Hello，各位小伙伴大家好，今天带大家来使用-hexo框架-来从零搭建个人博客！" class="headerlink" title="Hello，各位小伙伴大家好，今天带大家来使用 hexo框架 来从零搭建个人博客！"></a>Hello，各位小伙伴大家好，今天带大家来使用 hexo框架 来从零搭建个人博客！</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/nanshen__/article/details/115739197">使用 hexo 框架 快速搭建个人博客（二）</a><br>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">TOC</a></p>
+<h1 id="一、什么是-hexo-框架-？"><a href="#一、什么是-hexo-框架-？" class="headerlink" title="一、什么是 hexo 框架 ？"></a>一、什么是 hexo 框架 ？</h1><p><img src="https://img-blog.csdnimg.cn/20210415205113791.jpg#pic_" alt="在这里插入图片描述"></p>
+<blockquote>
+<p><strong>hexo框架</strong> 是一个快速、简洁且高效的博客框架，它支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。除此之外它可以与数种模板引擎（EJS，Pug，Nunjucks）和工具（Babel，PostCSS，Less/Sass）轻易集成。在众多美观、强大、可定制的主题中选择；使用任何兼容的模板引擎创建自己的主题。</p>
+</blockquote>
+<h1 id="二、-环境搭建"><a href="#二、-环境搭建" class="headerlink" title="二、 环境搭建"></a>二、 环境搭建</h1><h2 id="1、Node-js-下载安装"><a href="#1、Node-js-下载安装" class="headerlink" title="1、Node.js 下载安装"></a>1、Node.js 下载安装</h2><p>NodeJS 管网：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a><br><img src="https://img-blog.csdnimg.cn/20210415131126413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>下载成功之后进行nodejs的安装，选择安装路径之后（不建议装在C盘），一路next就可以了！！（由于我之前已经安装过了，这里就不再进行安装）安装成功之后在cmd中输入 <strong>node -v 和 npm -v</strong> 显示出node的版本号 和 npm的版本号 即为安装成功！<br><img src="https://img-blog.csdnimg.cn/20210415131542678.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="2、npm-淘宝镜像设置"><a href="#2、npm-淘宝镜像设置" class="headerlink" title="2、npm 淘宝镜像设置"></a>2、npm 淘宝镜像设置</h2><p>通常我们使用npm下载的时候下载速度非常慢，经常还会出现卡顿，命令窗口无响应的情况！！！为了避免这种情况我们选择更换镜像，我们选择使用淘宝的镜像来进行下载，淘宝的速度可谓是起飞~~~</p>
+<p>再cmd中输入这段命令 <strong>npm install -g cnpm –egistry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></strong>  将镜像改为淘宝镜像来使用，以后我们需要下载是就要使用 <strong>npms</strong> 来进行操作！<br><img src="https://img-blog.csdnimg.cn/20210415131831351.png" alt="在这里插入图片描述"><br>现在就已经安装成功了！！<br><img src="https://img-blog.csdnimg.cn/20210415131842364.png" alt="在这里插入图片描述"></p>
+<h2 id="3、hexo框架-下载安装"><a href="#3、hexo框架-下载安装" class="headerlink" title="3、hexo框架 下载安装"></a>3、hexo框架 下载安装</h2><p>在cmd 中输入   <strong>cnpm install -g hexo-cli</strong> 命令开始 hexo 的安装！<br><img src="https://img-blog.csdnimg.cn/20210415132216656.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>当安装完成之后再输入 <strong>hexo -v</strong> 命令来查看 hexo是否安装成功！<br><img src="https://img-blog.csdnimg.cn/20210415132302764.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>若查出hexo-cli的版本号即为安装成功！（在查询 hexo 的版本时也同时查询出了node的版本信息，说明 hexo 框架是基于 node的😁）</p>
+<h1 id="三、开始搭建博客！"><a href="#三、开始搭建博客！" class="headerlink" title="三、开始搭建博客！"></a>三、开始搭建博客！</h1><p>环境已经搭建完成了，接下来我们就要  <strong>正式开始搭建博客了</strong> ！（🤩冲冲冲~~~）<br><img src="https://img-blog.csdnimg.cn/20210415205319112.gif#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="1、新建目录进行初始化"><a href="#1、新建目录进行初始化" class="headerlink" title="1、新建目录进行初始化"></a>1、新建目录进行初始化</h2><p>首先我们新建一个文件夹（建在哪里都可以）<img src="https://img-blog.csdnimg.cn/20210415133415366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>接下来我们点击进入新建的文件夹中，之后在导航栏输入<strong>cmd</strong>进入cmd命令窗口！<br><img src="https://img-blog.csdnimg.cn/20210415133559665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210415133611686.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这样cmd打开的起始位置就是在该文件夹下！<br><img src="https://img-blog.csdnimg.cn/20210415133640876.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>接下来我们在cmd命令窗口中输入 <strong>hexo init</strong> 命令开始项目的初始化！<img src="https://img-blog.csdnimg.cn/20210415133814303.png" alt="在这里插入图片描述"><br>当出现 <strong>INFO  Start blogging with Hexo!</strong>  时说明博客框架 <strong>初始化 成功</strong>！<br><img src="https://img-blog.csdnimg.cn/20210415133852384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>初始化成功之后大家就会发现文件夹中多出了好多东西，这些都是什么呢？node_modules 主要是存放依赖的，source目录中存放的是个人的博客，theme中存放的就是大家最关心的<strong>主题</strong>啦😉（谁不希望自己的博客漂漂亮亮的呢）<br><img src="https://img-blog.csdnimg.cn/20210415134317240.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="2、博客启动！！！！"><a href="#2、博客启动！！！！" class="headerlink" title="2、博客启动！！！！"></a>2、博客启动！！！！</h2><p><img src="https://img-blog.csdnimg.cn/20210415205346785.gif#pic_center" alt="在这里插入图片描述"></p>
+<p>没想到吧？!刚初始化完毕就启动了？？？？😱   没错就是要启动了<br>输入 <strong>hexo s</strong> 命令 来启动我们的博客！！<br><img src="https://img-blog.csdnimg.cn/20210415134759573.png" alt="在这里插入图片描述"><br>ヾ(≧▽≦*)o 启动成功！！！！！！！！！！！！！！！！😁😁😁😁</p>
+<h2 id="3、本地访问"><a href="#3、本地访问" class="headerlink" title="3、本地访问"></a>3、本地访问</h2><p>上面已经提示了，博客占用了本地的4000端口！<br>啊啊啊，激动的心，颤抖的手。😶😶<br><img src="https://img-blog.csdnimg.cn/20210415135014443.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>哦哦哦~~~~~~~~~~~~~~~~~~~~~~~~~~<br>本地博客搭建成功！！！！👻👻👻👻👻<br><img src="https://img-blog.csdnimg.cn/20210415135144482.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="本地md文件上传！"><a href="#本地md文件上传！" class="headerlink" title="本地md文件上传！"></a>本地md文件上传！</h2><p>之前也说过了，这个文件夹是存放个人静态博客的！那我就把我尘封多年的Markdown写的笔记拿出来试试😚😚<br><img src="https://img-blog.csdnimg.cn/20210415135545845.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>接下来进入cmd 关闭 服务，按住 <strong>Ctrl + C</strong>，接下来输入Y即可停止服务！！！<br><img src="https://img-blog.csdnimg.cn/20210415135647405.png" alt="在这里插入图片描述"><br>接下来我们使用 <strong>hexo clean</strong> 清理一下内存！ 接下来使用 <strong>hexo g</strong> 来重新生成一下<br><img src="https://img-blog.csdnimg.cn/20210415135831637.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210415135854683.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>看到这里了吗？ 我新添加的一篇Maekdown笔记已经加载进去了！！😀😀</p>
+<p>加下来再次启动服务！！ <strong>hexo s</strong><br><img src="https://img-blog.csdnimg.cn/2021041514000814.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210415140051379.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25hbnNoZW5fXw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>哦哦哦~~~~~~~~ 很明显我新添加的博客已经展示出来了😝😝😝<br><img src="https://img-blog.csdnimg.cn/20210415205416109.gif#pic_center" alt="在这里插入图片描述"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上就是本期个人博客的在本地的快速搭建，下期将带大家更换博客主题以及将博客发布在GitHub上和Gitee上。            <a target="_blank" rel="noopener" href="https://blog.csdn.net/nanshen__/article/details/115739197">使用 hexo 框架 快速搭建个人博客（二）</a><br><strong>我是楠橘星，期待大家的关注！😀😀😀😀</strong></p>
+<p><strong>树苗如果因为怕痛而拒绝修剪，那就永远不会成材。</strong><br><img src="https://img-blog.csdnimg.cn/20210415205433980.jpg" alt="在这里插入图片描述"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='https://api88.net/api/qqmusic/?key=7e578aadf5545bfe&type=url&id=0013WPvt4fQH2b&size='></li>
+                        
+                    
+                        
+                            <li title='1' data-url='https://api88.net/api/qqmusic/?key=7e578aadf5545bfe&type=url&id=004VBMk71TdUuR&size='></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
